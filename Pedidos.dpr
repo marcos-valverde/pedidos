@@ -12,7 +12,7 @@ uses
   Controller.Itens in 'app\Controllers\Controller.Itens.pas',
   Model.Item in 'app\Models\Model.Item.pas',
   uFrmPedidosVendas in 'app\Views\uFrmPedidosVendas.pas' {FrmPedidoVendas},
-  DAO.ModuloDados in 'app\Dao\DAO.ModuloDados.pas' {ModuleConnection: TDataModule};
+  DAO.ModuloDados in 'app\Dao\DAO.ModuloDados.pas' {DataModule1: TDataModule};
 
 {$R *.res}
 
@@ -20,7 +20,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.Title := 'Pedido de Vendas';
-  Application.CreateForm(TModuleConnection, ModuleConnection);
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
   Application.Run;
 end.

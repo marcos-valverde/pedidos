@@ -117,8 +117,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="app\Dao\DAO.ModuloDados.pas">
-            <Form>ModuleConnection</Form>
-            <FormType>dfm</FormType>
+            <Form>DataModule1</Form>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">
